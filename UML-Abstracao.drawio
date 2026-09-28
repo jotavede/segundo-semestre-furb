@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="06n3wWKJ585cVV_HSt52-7" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;span style=&quot;font-weight: 700;&quot;&gt;&lt;i&gt;Funcionario&lt;/i&gt;&lt;/span&gt;" vertex="1">
-          <mxGeometry height="175" width="160" x="340" y="60" as="geometry" />
+          <mxGeometry height="175" width="160" x="334" y="40" as="geometry" />
         </mxCell>
         <mxCell id="06n3wWKJ585cVV_HSt52-8" parent="06n3wWKJ585cVV_HSt52-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;text-align: center;&quot;&gt;- nome : String&lt;/span&gt;" vertex="1">
           <mxGeometry height="30" width="160" y="30" as="geometry" />
@@ -20,7 +20,7 @@
           <mxGeometry height="30" width="160" y="145" as="geometry" />
         </mxCell>
         <mxCell id="06n3wWKJ585cVV_HSt52-11" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="FuncionarioMensalista" vertex="1">
-          <mxGeometry height="115" width="230" x="80" y="300" as="geometry" />
+          <mxGeometry height="115" width="230" x="140" y="395" as="geometry" />
         </mxCell>
         <mxCell id="06n3wWKJ585cVV_HSt52-21" parent="06n3wWKJ585cVV_HSt52-11" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,transparent);" value="&lt;p&gt;&lt;code&gt;+ FuncionarioMensalista(nome: String, salarioBase: double)&lt;/code&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_0ee60df802474715-112&quot;&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/p&gt;" vertex="1">
           <mxGeometry height="55" width="230" y="30" as="geometry" />
@@ -29,7 +29,7 @@
           <mxGeometry height="30" width="230" y="85" as="geometry" />
         </mxCell>
         <mxCell id="06n3wWKJ585cVV_HSt52-17" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="FuncionarioHorista" vertex="1">
-          <mxGeometry height="110" width="230" x="510" y="290" as="geometry" />
+          <mxGeometry height="110" width="230" x="414" y="400" as="geometry" />
         </mxCell>
         <mxCell id="06n3wWKJ585cVV_HSt52-18" parent="06n3wWKJ585cVV_HSt52-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- horasTrabalhadas : double&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="230" y="30" as="geometry" />

@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" pages="2">
+<mxfile host="app.diagrams.net" pages="4">
   <diagram name="Atividade1" id="cjW8o-gtBubrfSgc1HRB">
     <mxGraphModel dx="1091" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -56,58 +56,136 @@
     </mxGraphModel>
   </diagram>
   <diagram name="Atividade2" id="orXPfLaoxPjDX9ZvysAM">
-    <mxGraphModel dx="1148" dy="493" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1818" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="ihA-XkVs2fadET5TLmc1-0" />
         <mxCell id="ihA-XkVs2fadET5TLmc1-1" parent="ihA-XkVs2fadET5TLmc1-0" />
-        <mxCell id="ihA-XkVs2fadET5TLmc1-2" parent="ihA-XkVs2fadET5TLmc1-1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#FFFFFF);" value="&lt;span style=&quot;font-weight: 700;&quot;&gt;&lt;i&gt;Funcionario&lt;/i&gt;&lt;/span&gt;" vertex="1">
-          <mxGeometry height="175" width="160" x="334" y="40" as="geometry" />
+        <UserObject label="" mermaidData="{&#xa;  &quot;data&quot;: &quot;classDiagram\n  class FormaGeometrica {\n    &lt;&lt;abstract&gt;&gt;\n    -String cor\n    +FormaGeometrica(String cor)\n    +String getCor()\n    +void setCor(String cor)\n    +calcularArea() double*\n  }\n\n  class Retangulo {\n    -double largura\n    -double altura\n    +Retangulo(String cor, double largura, double altura)\n    +calcularArea() double\n  }\n\n  class Circulo {\n    -double raio\n    +Circulo(String cor, double raio)\n    +calcularArea() double\n  }\n\n  class Triangulo {\n    -double base\n    -double altura\n    +Triangulo(String cor, double base, double altura)\n    +calcularArea() double\n  }\n\n  FormaGeometrica &lt;|-- Retangulo\n  FormaGeometrica &lt;|-- Circulo\n  FormaGeometrica &lt;|-- Triangulo&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="LFoW_rN9rpaYThyPF3NA-0">
+          <mxCell connectable="0" parent="ihA-XkVs2fadET5TLmc1-1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="«abstract»&lt;br&gt;&lt;b&gt;FormaGeometrica&lt;/b&gt;" mermaidId="n:FormaGeometrica" mermaidBaseStyle="swimlane;html=1;fontStyle=0;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=72;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=light-dark(#ECECFF,#1f2020);whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" mermaidBaseValue="«abstract»&lt;br&gt;&lt;b&gt;FormaGeometrica&lt;/b&gt;" id="LFoW_rN9rpaYThyPF3NA-1">
+          <mxCell parent="LFoW_rN9rpaYThyPF3NA-0" style="swimlane;html=1;fontStyle=0;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=72;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=light-dark(#ECECFF,#1f2020);whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" vertex="1">
+            <mxGeometry height="236" width="306" x="656" y="320" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="LFoW_rN9rpaYThyPF3NA-2" parent="LFoW_rN9rpaYThyPF3NA-1" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="-String cor" vertex="1">
+          <mxGeometry height="24" width="306" y="84" as="geometry" />
         </mxCell>
-        <mxCell id="ihA-XkVs2fadET5TLmc1-3" parent="ihA-XkVs2fadET5TLmc1-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;text-align: center;&quot;&gt;- nome : String&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="160" y="30" as="geometry" />
+        <mxCell id="LFoW_rN9rpaYThyPF3NA-3" parent="LFoW_rN9rpaYThyPF3NA-1" style="line;strokeWidth=1;fillColor=none;spacingLeft=3;spacingRight=3;rotatable=0;points=[];strokeColor=inherit;" vertex="1">
+          <mxGeometry height="20" width="306" y="108" as="geometry" />
         </mxCell>
-        <mxCell id="ihA-XkVs2fadET5TLmc1-4" parent="ihA-XkVs2fadET5TLmc1-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: center;&quot;&gt;- salarioBase : double&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="160" y="60" as="geometry" />
+        <mxCell id="LFoW_rN9rpaYThyPF3NA-4" parent="LFoW_rN9rpaYThyPF3NA-1" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+FormaGeometrica(String cor)" vertex="1">
+          <mxGeometry height="24" width="306" y="128" as="geometry" />
         </mxCell>
-        <mxCell id="ihA-XkVs2fadET5TLmc1-5" parent="ihA-XkVs2fadET5TLmc1-2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,transparent);" value="&lt;code&gt;+ Funcionario(nome: String, salarioBase: double)&lt;/code&gt;" vertex="1">
-          <mxGeometry height="55" width="160" y="90" as="geometry" />
+        <mxCell id="LFoW_rN9rpaYThyPF3NA-5" parent="LFoW_rN9rpaYThyPF3NA-1" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+String getCor()" vertex="1">
+          <mxGeometry height="24" width="306" y="152" as="geometry" />
         </mxCell>
-        <mxCell id="ihA-XkVs2fadET5TLmc1-6" parent="ihA-XkVs2fadET5TLmc1-2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,transparent);" value="&lt;i&gt;+ calcularSalario() : double&lt;/i&gt;" vertex="1">
-          <mxGeometry height="30" width="160" y="145" as="geometry" />
+        <mxCell id="LFoW_rN9rpaYThyPF3NA-6" parent="LFoW_rN9rpaYThyPF3NA-1" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+void setCor(String cor)" vertex="1">
+          <mxGeometry height="24" width="306" y="176" as="geometry" />
         </mxCell>
-        <mxCell id="ihA-XkVs2fadET5TLmc1-7" parent="ihA-XkVs2fadET5TLmc1-1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="FuncionarioMensalista" vertex="1">
-          <mxGeometry height="115" width="230" x="140" y="395" as="geometry" />
+        <mxCell id="LFoW_rN9rpaYThyPF3NA-7" parent="LFoW_rN9rpaYThyPF3NA-1" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);fontStyle=2;" value="+calcularArea() double" vertex="1">
+          <mxGeometry height="24" width="306" y="200" as="geometry" />
         </mxCell>
-        <mxCell id="ihA-XkVs2fadET5TLmc1-8" parent="ihA-XkVs2fadET5TLmc1-7" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,transparent);" value="&lt;p&gt;&lt;code&gt;+ FuncionarioMensalista(nome: String, salarioBase: double)&lt;/code&gt;&lt;/p&gt;&lt;p id=&quot;p-rc_0ee60df802474715-112&quot;&gt;&lt;sup class=&quot;superscript&quot;&gt;&lt;/sup&gt;&lt;/p&gt;" vertex="1">
-          <mxGeometry height="55" width="230" y="30" as="geometry" />
+        <UserObject label="&lt;b&gt;Retangulo&lt;/b&gt;" mermaidId="n:Retangulo" mermaidBaseStyle="swimlane;html=1;fontStyle=0;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=light-dark(#ECECFF,#1f2020);whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" mermaidBaseValue="&lt;b&gt;Retangulo&lt;/b&gt;" id="LFoW_rN9rpaYThyPF3NA-8">
+          <mxCell parent="LFoW_rN9rpaYThyPF3NA-0" style="swimlane;html=1;fontStyle=0;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=light-dark(#ECECFF,#1f2020);whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" vertex="1">
+            <mxGeometry height="188" width="440" x="180" y="610" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="LFoW_rN9rpaYThyPF3NA-9" parent="LFoW_rN9rpaYThyPF3NA-8" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="-double largura" vertex="1">
+          <mxGeometry height="24" width="440" y="60" as="geometry" />
         </mxCell>
-        <mxCell id="ihA-XkVs2fadET5TLmc1-9" parent="ihA-XkVs2fadET5TLmc1-7" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,transparent);" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; white-space: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20parent%3D%221%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3BfillColor%3Dlight-dark(%23FFFFFF%2Ctransparent)%3B%22%20value%3D%22%26lt%3Bcode%26gt%3B%2B%20Funcionario(nome%3A%20String%2C%20salarioBase%3A%20Double)%26lt%3B%2Fcode%26gt%3B%22%20vertex%3D%221%22%3E%3CmxGeometry%20height%3D%2255%22%20width%3D%22190%22%20x%3D%22130%22%20y%3D%22310%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt; + calcularSalario(): double" vertex="1">
-          <mxGeometry height="30" width="230" y="85" as="geometry" />
+        <mxCell id="LFoW_rN9rpaYThyPF3NA-10" parent="LFoW_rN9rpaYThyPF3NA-8" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="-double altura" vertex="1">
+          <mxGeometry height="24" width="440" y="84" as="geometry" />
         </mxCell>
-        <mxCell id="ihA-XkVs2fadET5TLmc1-10" parent="ihA-XkVs2fadET5TLmc1-1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="FuncionarioHorista" vertex="1">
-          <mxGeometry height="110" width="230" x="414" y="400" as="geometry" />
+        <mxCell id="LFoW_rN9rpaYThyPF3NA-11" parent="LFoW_rN9rpaYThyPF3NA-8" style="line;strokeWidth=1;fillColor=none;spacingLeft=3;spacingRight=3;rotatable=0;points=[];strokeColor=inherit;" vertex="1">
+          <mxGeometry height="20" width="440" y="108" as="geometry" />
         </mxCell>
-        <mxCell id="ihA-XkVs2fadET5TLmc1-11" parent="ihA-XkVs2fadET5TLmc1-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- horasTrabalhadas : double&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="230" y="30" as="geometry" />
+        <mxCell id="LFoW_rN9rpaYThyPF3NA-12" parent="LFoW_rN9rpaYThyPF3NA-8" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+Retangulo(String cor, double largura, double altura)" vertex="1">
+          <mxGeometry height="24" width="440" y="128" as="geometry" />
         </mxCell>
-        <mxCell id="ihA-XkVs2fadET5TLmc1-12" parent="ihA-XkVs2fadET5TLmc1-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: center;&quot;&gt;- valorHora : double&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="230" y="60" as="geometry" />
+        <mxCell id="LFoW_rN9rpaYThyPF3NA-13" parent="LFoW_rN9rpaYThyPF3NA-8" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+calcularArea() double" vertex="1">
+          <mxGeometry height="24" width="440" y="152" as="geometry" />
         </mxCell>
-        <mxCell id="ihA-XkVs2fadET5TLmc1-13" parent="ihA-XkVs2fadET5TLmc1-10" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,transparent);" value="+ calcularSalario() : double" vertex="1">
-          <mxGeometry height="20" width="230" y="90" as="geometry" />
+        <UserObject label="&lt;b&gt;Circulo&lt;/b&gt;" mermaidId="n:Circulo" mermaidBaseStyle="swimlane;html=1;fontStyle=0;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=light-dark(#ECECFF,#1f2020);whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" mermaidBaseValue="&lt;b&gt;Circulo&lt;/b&gt;" id="LFoW_rN9rpaYThyPF3NA-14">
+          <mxCell parent="LFoW_rN9rpaYThyPF3NA-0" style="swimlane;html=1;fontStyle=0;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=light-dark(#ECECFF,#1f2020);whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" vertex="1">
+            <mxGeometry height="164" width="278" x="670" y="622" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="LFoW_rN9rpaYThyPF3NA-15" parent="LFoW_rN9rpaYThyPF3NA-14" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="-double raio" vertex="1">
+          <mxGeometry height="24" width="278" y="60" as="geometry" />
         </mxCell>
-        <mxCell id="ihA-XkVs2fadET5TLmc1-14" edge="1" parent="ihA-XkVs2fadET5TLmc1-1" source="ihA-XkVs2fadET5TLmc1-7" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ihA-XkVs2fadET5TLmc1-2" value="Extends">
-          <mxGeometry relative="1" width="160" as="geometry">
-            <mxPoint x="190" y="270" as="sourcePoint" />
-            <mxPoint x="350" y="270" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="LFoW_rN9rpaYThyPF3NA-16" parent="LFoW_rN9rpaYThyPF3NA-14" style="line;strokeWidth=1;fillColor=none;spacingLeft=3;spacingRight=3;rotatable=0;points=[];strokeColor=inherit;" vertex="1">
+          <mxGeometry height="20" width="278" y="84" as="geometry" />
         </mxCell>
-        <mxCell id="ihA-XkVs2fadET5TLmc1-15" edge="1" parent="ihA-XkVs2fadET5TLmc1-1" source="ihA-XkVs2fadET5TLmc1-10" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.588;exitY=0.018;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitPerimeter=0;" target="ihA-XkVs2fadET5TLmc1-6" value="Extends">
-          <mxGeometry relative="1" width="160" as="geometry">
-            <mxPoint x="380" y="335" as="sourcePoint" />
-            <mxPoint x="605" y="270" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="LFoW_rN9rpaYThyPF3NA-17" parent="LFoW_rN9rpaYThyPF3NA-14" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+Circulo(String cor, double raio)" vertex="1">
+          <mxGeometry height="24" width="278" y="104" as="geometry" />
         </mxCell>
+        <mxCell id="LFoW_rN9rpaYThyPF3NA-18" parent="LFoW_rN9rpaYThyPF3NA-14" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+calcularArea() double" vertex="1">
+          <mxGeometry height="24" width="278" y="128" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;b&gt;Triangulo&lt;/b&gt;" mermaidId="n:Triangulo" mermaidBaseStyle="swimlane;html=1;fontStyle=0;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=light-dark(#ECECFF,#1f2020);whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" mermaidBaseValue="&lt;b&gt;Triangulo&lt;/b&gt;" id="LFoW_rN9rpaYThyPF3NA-19">
+          <mxCell parent="LFoW_rN9rpaYThyPF3NA-0" style="swimlane;html=1;fontStyle=0;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=light-dark(#ECECFF,#1f2020);whiteSpace=wrap;fillColor=light-dark(#ECECFF,#1f2020);strokeColor=light-dark(#9370DB,#cccccc);fontColor=light-dark(#333333,#cccccc);fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" vertex="1">
+            <mxGeometry height="188" width="413" x="998" y="610" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="LFoW_rN9rpaYThyPF3NA-20" parent="LFoW_rN9rpaYThyPF3NA-19" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="-double base" vertex="1">
+          <mxGeometry height="24" width="413" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LFoW_rN9rpaYThyPF3NA-21" parent="LFoW_rN9rpaYThyPF3NA-19" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="-double altura" vertex="1">
+          <mxGeometry height="24" width="413" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="LFoW_rN9rpaYThyPF3NA-22" parent="LFoW_rN9rpaYThyPF3NA-19" style="line;strokeWidth=1;fillColor=none;spacingLeft=3;spacingRight=3;rotatable=0;points=[];strokeColor=inherit;" vertex="1">
+          <mxGeometry height="20" width="413" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="LFoW_rN9rpaYThyPF3NA-23" parent="LFoW_rN9rpaYThyPF3NA-19" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+Triangulo(String cor, double base, double altura)" vertex="1">
+          <mxGeometry height="24" width="413" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="LFoW_rN9rpaYThyPF3NA-24" parent="LFoW_rN9rpaYThyPF3NA-19" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=light-dark(#333333,#cccccc);" value="+calcularArea() double" vertex="1">
+          <mxGeometry height="24" width="413" y="152" as="geometry" />
+        </mxCell>
+        <UserObject label="" mermaidId="e:FormaGeometrica-&gt;Retangulo#0" mermaidBaseStyle="curved=1;startArrow=block;startSize=14;startFill=0;endArrow=none;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.73;entryX=0.5;entryY=0;" mermaidBaseValue="" id="LFoW_rN9rpaYThyPF3NA-25">
+          <mxCell edge="1" parent="LFoW_rN9rpaYThyPF3NA-0" source="LFoW_rN9rpaYThyPF3NA-1" style="curved=1;startArrow=block;startSize=14;startFill=0;endArrow=none;strokeColor=light-dark(#333333,#cccccc);exitX=0;exitY=0.73;entryX=0.5;entryY=0;rounded=0;" target="LFoW_rN9rpaYThyPF3NA-8">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="400" y="585" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:FormaGeometrica-&gt;Circulo#0" mermaidBaseStyle="curved=1;startArrow=block;startSize=14;startFill=0;endArrow=none;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="LFoW_rN9rpaYThyPF3NA-26">
+          <mxCell edge="1" parent="LFoW_rN9rpaYThyPF3NA-0" source="LFoW_rN9rpaYThyPF3NA-1" style="curved=1;startArrow=block;startSize=14;startFill=0;endArrow=none;strokeColor=light-dark(#333333,#cccccc);exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="LFoW_rN9rpaYThyPF3NA-14">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:FormaGeometrica-&gt;Triangulo#0" mermaidBaseStyle="curved=1;startArrow=block;startSize=14;startFill=0;endArrow=none;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.73;entryX=0.5;entryY=0;" mermaidBaseValue="" id="LFoW_rN9rpaYThyPF3NA-27">
+          <mxCell edge="1" parent="LFoW_rN9rpaYThyPF3NA-0" source="LFoW_rN9rpaYThyPF3NA-1" style="curved=1;startArrow=block;startSize=14;startFill=0;endArrow=none;strokeColor=light-dark(#333333,#cccccc);exitX=1;exitY=0.73;entryX=0.5;entryY=0;rounded=0;" target="LFoW_rN9rpaYThyPF3NA-19">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="1204" y="585" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Atividade3" id="_V1EwE0FPn4ghtXf_4YA">
+    <mxGraphModel dx="1284" dy="551" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="GCAFWU8wJeStF2fhqJNs-0" />
+        <mxCell id="GCAFWU8wJeStF2fhqJNs-1" parent="GCAFWU8wJeStF2fhqJNs-0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="bfqnGSn-a3RgZzxVkgC1" name="Página-4">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
       </root>
     </mxGraphModel>
   </diagram>
